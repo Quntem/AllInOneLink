@@ -21,14 +21,16 @@ body {
 }
 
 .card1url1 {
-    padding-left: 10px;
     width: 15%;
-    background-color: #00000075;
     font-family: 'Figtree', sans-serif;
+    background-color: #00000000;
     color: white;
     border: none;
+    width: 100px;
+    padding-left: 0px;
     margin-right: 5px;
     border-radius: 6px;
+    outline: none;
 }
 
 .card1url2 {
@@ -39,4 +41,20 @@ body {
     border: none;
     margin-right: 5px;
     border-radius: 6px;
+}
+
+.inputholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    background-color: #00000075;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.signuparea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
