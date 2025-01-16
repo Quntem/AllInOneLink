@@ -1,0 +1,61 @@
+/* Body Formatting */
+  
+body {
+    height: 100vh;
+    background: #1a1a1a;
+    color: white;
+    font-weight: normal;
+    font-family: 'Figtree', sans-serif;
+}
+
+/* Cards Formatting */
+
+.card1 {
+    background-color: #00000050;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-left: 45px;
+    margin: 25px;
+    border-radius: 14px;
+}
+
+.card1url1 {
+    width: 15%;
+    font-family: 'Figtree', sans-serif;
+    background-color: #00000000;
+    color: white;
+    border: none;
+    width: 100px;
+    padding-left: 0px;
+    margin-right: 5px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.card1url2 {
+    width: 4%;
+    background-color: #00000075;
+    font-family: 'Figtree', sans-serif;
+    color: white;
+    border: none;
+    margin-right: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.inputholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    background-color: #00000075;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.signuparea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
