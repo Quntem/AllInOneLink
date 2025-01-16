@@ -8,6 +8,10 @@ body {
     font-family: 'Figtree', sans-serif;
 }
 
+a {
+    color: white;
+}
+
 /* Card Formatting */
 
 .user-card {
