@@ -20,6 +20,10 @@ body {
     border-radius: 14px;
 }
 
+.card1-decrease-width {
+    padding-right: 70%;
+}
+
 .card1url1 {
     width: 15%;
     font-family: 'Figtree', sans-serif;
