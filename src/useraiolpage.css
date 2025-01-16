@@ -10,6 +10,8 @@ body {
 
 a {
     color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* Card Formatting */
@@ -28,6 +30,34 @@ a {
 }
 
 .link-card {
+    background-color: rgba(19, 19, 19, 0.5);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: white;
+}
+
+.link-card-yt {
+    background-color: rgba(255, 0, 0, 0.5);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: white;
+}
+
+.link-card-X {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     padding-top: 10px;
