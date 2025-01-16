@@ -41,6 +41,7 @@ body {
     border: none;
     margin-right: 5px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .inputholder {
