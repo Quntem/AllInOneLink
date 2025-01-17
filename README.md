@@ -46,5 +46,7 @@ If you're someone who's from a business, tell your CEO to support us by donating
 
 # The Team 👏
 Oscar M. - Owner of this project and the person who thought of this in the first place 🗣️
+
 Sabio T. - html, css developer who is unfunny (me) 😐
+
 Cyclic (his real name is hidden :3 ) - sat around and played geometry dash, tysm!! ❤️
