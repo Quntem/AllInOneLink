@@ -15,6 +15,7 @@ All In One Link is a website that allows you to create a link for displaying lin
 
 # Special Cards ♦️
 **YouTube SC** - Use this card for YouTube links to get a red background color to it.
+
 **X SC** - Use this card for X __(formerly Twitter)__ links to get a more black background.
 
 # More Ways To Customize Your Page ✨
