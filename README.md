@@ -18,6 +18,16 @@ All In One Link is a website that allows you to create a link for displaying lin
 
 **X SC** - Use this card for X __(formerly Twitter)__ links to get a more black background.
 
+# AIOL Glossary 📖
+## AIOL User Card (User Card)
+Your AIOL's User Card (the container outside that displays all the links, you know?)
+
+## AIOL Link Card (Link Card)
+Your AIOL's Link Card (the wrapper that displays your link, you know?)
+
+## Dashboard
+Your AIOL's "Control Center"
+
 # More Ways To Customize Your Page ✨
 Feeling like you need more personality into the page or just want to play around with more settings? Well, for reading all the way down here (or by scrolling, if you're boring) we'll congratulate you by giving you the Guide of Advanced Design.
 
@@ -33,3 +43,10 @@ You should use your brands color pallete in our feature: Custom Color! This coul
 
 ### Support Us 🗿
 If you're someone who's from a business, tell your CEO to support us by donating to us- which you cannot do currently because we haven't set it up. So support us by following us on our socials!
+
+# The Team 👏
+Oscar M. - Owner of this project and the person who thought of this in the first place 🗣️
+
+Sabio T. - html, css developer who is unfunny (me) 😐
+
+Cyclic (his real name is hidden :3 ) - sat around and played geometry dash, tysm!! ❤️
