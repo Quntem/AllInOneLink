@@ -26,17 +26,32 @@ button {
     background-color: #00000050;
     padding: 0px;
     margin: 0px;
-    margin-left: 12px;
-    margin-right: 86%;
     border-radius: 16px;
 }
 
 .LinkManagement {
     background-color: #00000050;
-    margin-left: 12px;
-    margin-right: 20%;
     padding: 15px;
     border-radius: 16px;
+    margin-right: 20px;
+}
+
+.sidebarLayout {
+    height: calc(100% - 40px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainpageArea {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebarArea {
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navbar a {
