@@ -49,7 +49,8 @@ button {
 }
 
 .sidebarArea {
-    width: fit-content;
+    width: 10%;
+    min-width: 10%;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -82,9 +83,26 @@ a, a:hover, a:active, a:visited {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 12px;
-    margin-left: 12px;
-    margin-bottom: 12px;
-    margin-right: 12px;
+    margin: 12px;
     height: 40px;
+}
+
+input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+    background-color: #00000075;
+    color: white;
+    margin-right: 15px;
+    border-radius: 4px;
+    font-family: 'Figtree', sans-serif;
+    border: none;
+}
+
+.Link {
+    background-color: #070707;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
 }
