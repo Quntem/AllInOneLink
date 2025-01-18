@@ -20,6 +20,8 @@ button {
 .backButton {
     margin-top: 12px;
     margin-left: 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
 }
 
 .navbar ul {
@@ -27,6 +29,9 @@ button {
     background-color: #00000050;
     padding: 0px;
     margin: 0px;
+    margin-left: 12px;
+    margin-right: 86%;
+    border-radius: 16px;
 }
 
 .navbar a {
