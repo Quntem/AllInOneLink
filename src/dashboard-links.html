@@ -19,7 +19,7 @@
 
         <!-- CSS Styling and JavaScript Links -->
         <link rel="stylesheet" href="dashboard-links.css">
-        <script src="dashboard-links.js"></script>
+        <script src="/jquery.js"></script>
         <script src="auth.js"></script>
 
         <!-- Clerk -->
@@ -29,6 +29,11 @@
             data-clerk-publishable-key="pk_test_ZGVjZW50LXBsYXR5cHVzLTMzLmNsZXJrLmFjY291bnRzLmRldiQ"
             src="https://decent-platypus-33.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
             type="text/javascript">
+        </script>
+
+        <!-- Temporarily set page for management -->
+        <script>
+            currentpage = "page1"
         </script>
     </head>
 
@@ -57,32 +62,17 @@
                     <h1>Link Management</h1>
                     <p>Manage your links here!</p>
 
-                    <div class="Link">
-                        <label for="LinkOneInput">Link:</label>
-                        <input type="url" name="LinkOneInput" placeholder="https://quntem.co.uk/">
-                    </div>
-
-                    <div class="Link">
-                        <label for="LinkTwoInput">Link:</label>
-                        <input type="url" name="LinkTwoInput" placeholder="https://quntem.co.uk/">
-                    </div>
-
-                    <div class="Link">
-                        <label for="LinkThreeInput">Link:</label>
-                        <input type="url" name="LinkThreeInput" placeholder="https://quntem.co.uk/">
-                    </div>
-                    
-                    <div class="Link">
-                        <label for="LinkFourInput">Link:</label>
-                        <input type="url" name="LinkFourInput" placeholder="https://quntem.co.uk/">
-                    </div>
-
-                    <div class="Link">
-                        <label for="LinkFiveInput">Link:</label>
-                        <input type="url" name="LinkFiveInput" placeholder="https://quntem.co.uk/">
+                    <div id="linkListArea">
+                        <div class="Link">
+                            <label for="LinkOneInput">Link:</label>
+                            <input type="url" name="LinkOneInput" placeholder="https://quntem.co.uk/">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- this JS needs to be loaded after the page so the page is available -->
+        <script src="dashboard-links.js"></script>
     </body>
 </html>
