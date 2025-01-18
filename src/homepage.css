@@ -86,4 +86,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }

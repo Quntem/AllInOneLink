@@ -18,8 +18,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
         <!-- CSS Styling and JavaScript Link -->
-        <link rel="stylesheet" href="homepage.css">
-        <script src="homepage.js"></script>
+        <link rel="stylesheet" href="/homepage.css">
+        <link rel="stylesheet" href="setupflow.css">
+        <script src="/jquery.js"></script>
+        <script src="setup.js"></script>
+        <script src="/auth.js"></script>
 
         <!-- Clerk -->
         <script
@@ -42,10 +45,11 @@
                     <div>
                         aiol.quntem.co.uk/
                     </div>
-                    <input class="card1url1" type="url" placeholder="YourName">
+                    <input class="card1url1" type="text" id="pagenameinput" placeholder="YourName">
                 </div>
                 <button type="submit" class="card1url2">Create</button>
             </div>
         </div>
+        <div id="user-button"></div>
     </body>
 </html>
