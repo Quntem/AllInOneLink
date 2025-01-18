@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
         <!-- CSS Styling and JavaScript Links -->
-        <link rel="stylesheet" href="dashboard-links.css">
+        <link rel="stylesheet" href="dashboard-preferences.css">
         <script src="/jquery.js"></script>
         <script src="auth.js"></script>
 
@@ -50,24 +50,20 @@
             <div class="sidebarArea">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="dashboard-links.html" class="selected">Links</a></li>
+                        <li><a href="dashboard-links.html">Links</a></li>
                         <li><a href="">Customization</a></li>
-                        <li><a href="dashboard-preferences.html">Preferences</a></li>
+                        <li><a href="dashboard-preferences.html" class="selected">Preferences</a></li>
                         <li><a href="">Other Settings</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="mainpageArea">
-                <div class="LinkManagement">
-                    <h1>Link Management</h1>
-                    <p>Manage your links here!</p>
+                <div class="ProjPref">
+                    <h1>Preferences</h1>
+                    <p>Change your preferences here for your Card!</p>
 
-                    <div id="linkListArea">
-                        <div class="Link">
-                            <label for="LinkOneInput">Link:</label>
-                            <input type="url" name="LinkOneInput" placeholder="https://quntem.co.uk/">
-                        </div>
-                    </div>
+                    <label for="LightMode">Light Mode</label>
+                    <input type="checkbox" name="LightMode">
                 </div>
             </div>
         </div>
