@@ -1,1 +1,21 @@
-{"name":"page1","userid":"uhiughrognr","links":[{"id":"Fri Jan 17 2025 23:50:52 GMT+0000 (Greenwich Mean Time)","name":"quntem website","url":"https://quntem.co.uk"},{"id":"Sat Jan 18 2025 08:52:51 GMT+0000 (Greenwich Mean Time)","name":"cloudplus site","url":"https://qplus.cloud"}]}
+{
+    "name": "page1",
+    "userid": "uhiughrognr",
+    "theme": {
+        "bgcolor": "#1a1a1a",
+        "cardcolor": "#535353",
+        "textcolor": "#ffffff"
+    },
+    "links": [
+        {
+            "id": "Fri Jan 17 2025 23:50:52 GMT+0000 (Greenwich Mean Time)",
+            "name": "quntem website",
+            "url": "https://quntem.co.uk"
+        },
+        {
+            "id": "Sat Jan 18 2025 08:52:51 GMT+0000 (Greenwich Mean Time)",
+            "name": "cloudplus site",
+            "url": "https://qplus.cloud"
+        }
+    ]
+}

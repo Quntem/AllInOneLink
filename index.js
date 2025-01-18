@@ -29,10 +29,24 @@ app.get('/api/page/:name/links/list', (req, res) => {
     });
 })
 
+app.get('/api/page/:name/colors/get', (req, res) => {
+    fs.readFile("linkindex/" + req.params.name + ".json", 'utf8', (err, data) => {
+        if (!err) {
+            currentfile = JSON.parse(data)
+            res.json(currentfile.theme)
+        }
+    });
+})
+
 app.post('/api/page/create/', (req, res) => {
     fs.writeFile("linkindex/" + req.query.pagename + ".json", JSON.stringify({
         "name": req.query.pagename,
         "userid": req.query.userid,
+        "theme": {
+            "bgcolor": "#1a1a1a",
+            "cardcolor": "#535353",
+            "textcolor": "#ffffff"
+        },
         "links": [
 
         ]

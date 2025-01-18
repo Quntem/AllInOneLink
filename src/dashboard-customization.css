@@ -1,0 +1,108 @@
+/* Body Formatting */
+  
+body {
+    height: 100vh;
+    background: #1a1a1a;
+    color: white;
+    font-weight: normal;
+    font-family: 'Figtree', sans-serif;
+}
+
+/* Button Formatting */
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.backButton {
+    margin-right: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #00000050;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 16px;
+}
+
+.LinkManagement {
+    background-color: #00000050;
+    padding: 15px;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
+.sidebarLayout {
+    height: calc(100% - 40px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainpageArea {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebarArea {
+    width: 10%;
+    min-width: 10%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
+
+.navbar a:hover {
+    background-color: #000000;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+a, a:hover, a:active, a:visited { 
+    color: white; 
+}
+
+.selected {
+    background-color: #070707;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+.BackButtonRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 12px;
+    height: 40px;
+}
+
+input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+    background-color: #00000075;
+    color: white;
+    margin-right: 15px;
+    border-radius: 4px;
+    font-family: 'Figtree', sans-serif;
+    border: none;
+}
+
+.Link {
+    background-color: #070707;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
