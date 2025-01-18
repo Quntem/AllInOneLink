@@ -31,6 +31,14 @@ button {
     border-radius: 16px;
 }
 
+.LinkManagement {
+    background-color: #00000050;
+    margin-left: 12px;
+    margin-right: 20%;
+    padding: 15px;
+    border-radius: 16px;
+}
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -47,6 +55,12 @@ button {
 
 a, a:hover, a:active, a:visited { 
     color: white; 
+}
+
+.selected {
+    background-color: #070707;
+    border-radius: 16px;
+    font-weight: bold;
 }
 
 .BackButtonRow {
