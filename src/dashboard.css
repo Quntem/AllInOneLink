@@ -18,10 +18,7 @@ button {
 }
 
 .backButton {
-    margin-top: 12px;
-    margin-left: 12px;
-    margin-bottom: 12px;
-    margin-right: 12px;
+    margin-right: 10px;
 }
 
 .navbar ul {
@@ -46,4 +43,15 @@ button {
     background-color: #000000;
     border-radius: 16px;
     font-weight: bold;
+}
+
+.BackButtonRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    height: 40px;
 }
