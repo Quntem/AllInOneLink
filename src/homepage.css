@@ -12,10 +12,9 @@ body {
 
 .card1 {
     background-color: #00000050;
-    text-align: left;
+    text-align: center;
     padding-top: 15px;
     padding-bottom: 40px;
-    padding-left: 45px;
     margin: 25px;
     border-radius: 14px;
 }
@@ -43,7 +42,8 @@ body {
 }
 
 .card1-decrease-width {
-    padding-right: 70%;
+    padding-left: 35%;
+    padding-right: 35%;
 }
 
 .card1url1 {
@@ -54,9 +54,9 @@ body {
     border: none;
     width: 100px;
     padding-left: 0px;
-    margin-right: 5px;
     border-radius: 6px;
     outline: none;
+    text-align: left;
 }
 
 .card1url2 {
@@ -65,9 +65,10 @@ body {
     font-family: 'Figtree', sans-serif;
     color: white;
     border: none;
-    margin-right: 5px;
     border-radius: 6px;
     cursor: pointer;
+    text-align: center;
+    margin: auto;
 }
 
 .inputholder {
@@ -78,6 +79,7 @@ body {
     background-color: #00000075;
     margin-right: 15px;
     border-radius: 10px;
+    margin: auto;
 }
 
 .signuparea {
