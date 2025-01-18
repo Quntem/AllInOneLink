@@ -7,6 +7,8 @@ app.set('views', path.join(__dirname, '/src'));
 var port = 5500
 var currentfile = ""
 
+app.use(express.json());
+
 app.use("/", express.static("src"))
 
 app.get('/:name', (req, res) => {
@@ -67,6 +69,20 @@ app.post('/api/page/links/add/', (req, res) => {
                 "url": req.query.url
             })
             fs.writeFile("linkindex/" + req.query.pagename + ".json", JSON.stringify(currentfile), err => {
+                if (!err) {
+                    res.status(200).send("Success")
+                }
+            })
+        }
+    });
+})
+
+app.post('/api/page/:name/colors/update', (req, res) => {
+    fs.readFile("linkindex/" + req.params.name + ".json", 'utf8', (err, data) => {
+        if (!err) {
+            currentfile = JSON.parse(data)
+            currentfile.theme = req.body
+            fs.writeFile("linkindex/" + req.params.name + ".json", JSON.stringify(currentfile), err => {
                 if (!err) {
                     res.status(200).send("Success")
                 }

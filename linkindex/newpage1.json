@@ -1,10 +1,1 @@
-{
-    "name": "newpage1",
-    "userid": "user_2rnPc5gRMFz0c81h76591qk12pn",
-    "theme": {
-        "bgcolor": "#1a1a1a",
-        "cardcolor": "#535353",
-        "textcolor": "#ffffff"
-    },
-    "links": []
-}
+{"name":"newpage1","userid":"user_2rnPc5gRMFz0c81h76591qk12pn","theme":{"bgcolor":"#f0f0f0","cardcolor":"#cccccc","textcolor":"#000000"},"links":[]}

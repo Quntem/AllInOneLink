@@ -2,9 +2,9 @@
     "name": "page1",
     "userid": "uhiughrognr",
     "theme": {
-        "bgcolor": "#1a1a1a",
-        "cardcolor": "#535353",
-        "textcolor": "#ffffff"
+        "bgcolor": "#ff0000",
+        "cardcolor": "#ffffff",
+        "textcolor": "#000000"
     },
     "links": [
         {
