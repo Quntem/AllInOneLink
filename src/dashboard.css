@@ -1,0 +1,9 @@
+/* Body Formatting */
+  
+body {
+    height: 100vh;
+    background: #1a1a1a;
+    color: white;
+    font-weight: normal;
+    font-family: 'Figtree', sans-serif;
+}
