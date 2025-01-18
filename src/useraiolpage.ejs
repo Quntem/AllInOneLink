@@ -39,35 +39,9 @@
             <h1><%= username %>'s Card</h1>
 
             <!-- Buttons (Link Cards) -->
-            <button class="link-card-yt">
-                <a href="https://www.youtube.com" target="_blank">
-                    My YouTube
-                </a>
-            </button>
-
-            <br>
-
-            <button class="link-card-X">
-                <a href="https://www.x.com" target="_blank">
-                    My X
-                </a>
-            </button>
-
-            <br>
-
-            <button class="link-card">
-                <a href="https://www.quntem.co.uk" target="_blank">
-                    My Website
-                </a>
-            </button>
-
-            <br>
-
-            <button class="link-card">
-                <a href="https://www.creator.quntem.co.uk" target="_blank">
-                    My Other Website
-                </a>
-            </button>
+            <% pagefile.links.forEach(function(link){ %>
+                <%- include('linktemplates/regularlink.ejs', {link: link}) %>
+            <% }); %>
         </div>
     </body>
 </html>

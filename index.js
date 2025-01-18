@@ -10,7 +10,14 @@ var currentfile = ""
 app.use("/", express.static("src"))
 
 app.get('/:name', (req, res) => {
-    res.render('useraiolpage', { username: req.params.name })
+    fs.readFile("linkindex/" + req.params.name + ".json", 'utf8', (err, data) => {
+        if (!err) {
+            currentfile = JSON.parse(data)
+            res.render('useraiolpage', { username: req.params.name, pagefile: currentfile })
+        } else {
+            res.sendFile(path.join(__dirname, '/src/404.html'))
+        }
+    });
 })
 
 app.post('/api/page/create/', (req, res) => {
