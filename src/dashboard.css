@@ -7,3 +7,17 @@ body {
     font-weight: normal;
     font-family: 'Figtree', sans-serif;
 }
+
+/* Button Formatting */
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.backButton {
+    margin-top: 12px;
+    margin-left: 12px;
+}
