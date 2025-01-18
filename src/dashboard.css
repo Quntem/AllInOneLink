@@ -45,4 +45,5 @@ button {
 .navbar a:hover {
     background-color: #000000;
     border-radius: 16px;
+    font-weight: bold;
 }
