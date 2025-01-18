@@ -71,6 +71,26 @@ body {
     margin: auto;
 }
 
+#signupbutton {
+    margin: 10px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#signinbutton {
+    margin: 10px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
 .inputholder {
     display: flex;
     flex-direction: row;
