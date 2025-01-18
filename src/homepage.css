@@ -20,6 +20,17 @@ body {
     border-radius: 14px;
 }
 
+.BenefitCard {
+    background-color: #00000050;
+    width: 35%;
+    margin: auto;
+    padding: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
 .card1-decrease-width {
     padding-right: 70%;
 }
