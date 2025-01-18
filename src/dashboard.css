@@ -21,3 +21,18 @@ button {
     margin-top: 12px;
     margin-left: 12px;
 }
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #00000050;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
