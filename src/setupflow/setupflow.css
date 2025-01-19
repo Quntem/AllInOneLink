@@ -4,6 +4,15 @@
     left: 20px;
 }
 
+.headerCard {
+    background-color: #00000050;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    margin: 25px;
+    border-radius: 14px;
+}
+
 .inputholder {
     display: flex;
     flex-direction: row;
@@ -16,12 +25,7 @@
 }
 
 .signuparea {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .card1url1 {
