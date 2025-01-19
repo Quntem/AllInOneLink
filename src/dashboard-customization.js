@@ -1,11 +1,3 @@
-fetch("api/page/" + currentpage + "/colors/get")
-.then(res => res.json())
-.then(res => {
-    $("#bgcolourinput").val(res.bgcolor)
-    $("#cardcolourinput").val(res.cardcolor)
-    $("#textcolourinput").val(res.textcolor)
-})
-
 var updatecolors = function() {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -27,4 +19,14 @@ var updatecolors = function() {
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.error(error));
+}
+
+var pagefunction = function() {
+    fetch("api/page/" + currentpage + "/colors/get")
+        .then(res => res.json())
+        .then(res => {
+            $("#bgcolourinput").val(res.bgcolor)
+            $("#cardcolourinput").val(res.cardcolor)
+            $("#textcolourinput").val(res.textcolor)
+        })
 }
