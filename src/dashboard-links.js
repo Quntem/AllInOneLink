@@ -6,12 +6,22 @@ var pagefunction = function() {
             res.forEach(link => {
                 $("#linkListArea").append(`
                     <div class="Link">
-                        <label for="LinkInput">Url</label>
-                        <input type="url" name="LinkInput" placeholder="Link URL" value="` + link.url + `">
-                        <label for="LinkNameInput">Name</label>
-                        <input type="url" name="LinkNameInput" placeholder="Link Name" value="` + link.name + `">
+                        <div>URL: ` + link.url + `</div>
+                        <div>Name: ` + link.name + `</div>
                     </div>
                 `)
             });
         })
+}
+
+var addLink = function() {
+    const requestOptions = {
+        method: "POST",
+        redirect: "follow"
+    };
+    
+    fetch("http://localhost:5500/api/page/links/add?pagename=" + currentpage + "&name=" + prompt("Enter Link Name") + "&url=" + prompt("Enter Link URL"), requestOptions)
+        .then((response) => response.text())
+        .then((result) => window.location.reload())
+        .catch((error) => console.error(error));
 }
