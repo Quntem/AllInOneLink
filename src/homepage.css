@@ -8,14 +8,28 @@ body {
     font-family: 'Figtree', sans-serif;
 }
 
+button {
+    font-family: 'Figtree', sans-serif;
+}
+
+a, a:hover, a:active, a:visited { 
+    font-family: 'Figtree', sans-serif;
+    text-decoration: none;
+    color: white; 
+}
+
 /* Cards Formatting */
 
     /* Header Card Formatting */
+
     .headerCard {
         background-color: #00000050;
+        background-image: url(index-preview.png);
         text-align: center;
         padding-top: 15px;
         padding-bottom: 15px;
+        margin-left: 35%;
+        margin-right: 35%;
         margin: 25px;
         border-radius: 14px;
     }
@@ -23,17 +37,6 @@ body {
     .headerCard-decrease-width {
         padding-left: 35%;
         padding-right: 35%;
-    }
-
-    /* Create Your Page / Sign In Button Row */
-
-    .signuparea {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     /* Benefit Card Formatting */
@@ -64,10 +67,14 @@ body {
 
     /* Button Formatting */
 
+    .signuparea {
+        margin: auto;
+    }
+    
     #signupbutton {
         margin: 10px;
         padding: 10px;
-        background-color: #1a1a1a;
+        background-color: #1d1d1d;
         color: white;
         outline: none;
         border: none;
@@ -75,13 +82,36 @@ body {
         cursor: pointer;
     }
 
+    #signupbutton:hover {
+        background: linear-gradient(0deg, rgba(43,71,41,1) 0%, rgba(23,37,22,1) 100%);
+    }
+
     #signinbutton {
         margin: 10px;
         padding: 10px;
-        background-color: #1a1a1a;
+        background-color: #00000000;
         color: white;
         outline: none;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    #signinbutton:hover {
+        color: #187c11;
+    }
+
+    .learnmorebutton {
+        margin: 10px;
+        padding: 10px;
+        background-color: #1d1d1d;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .learnmorebutton:hover {
+        background: linear-gradient(180deg, #f3118d50, rgba(233,0,102,1) 100%)
     }
