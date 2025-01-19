@@ -33,15 +33,17 @@
 
     <body style="background: <%= pagefile.theme.bgcolor %>; color: <%= pagefile.theme.textcolor %>">
         <!-- User Card -->
-        <div class="user-card" style="background-color: <%= pagefile.theme.cardcolor %>;">
+        <div class="cardcenterocntainer">
+            <div class="user-card" style="background-color: <%= pagefile.theme.cardcolor %>;">
 
-            <!-- Header -->
-            <h1><%= username %>'s Card</h1>
-
-            <!-- Buttons (Link Cards) -->
-            <% pagefile.links.forEach(function(link){ %>
-                <%- include('linktemplates/regularlink.ejs', {link: link}) %>
-            <% }); %>
+                <!-- Header -->
+                <h1><%= username %>'s Card</h1>
+    
+                <!-- Buttons (Link Cards) -->
+                <% pagefile.links.forEach(function(link){ %>
+                    <%- include('linktemplates/regularlink.ejs', {link: link}) %>
+                <% }); %>
+            </div>
         </div>
     </body>
 </html>
