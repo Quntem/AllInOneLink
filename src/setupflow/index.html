@@ -36,22 +36,42 @@
 
     <body>
         <div class="headerCard">
-            <div id="user-button"></div>
-            <img src="\favicon.png" class="icon-Header" width="6%">
-            <h1>Welcome To AIOL</h1>
-            <p class="headerCard-decrease-width">
+            <div id="user-button" class="animate__animated animate__fadeInDown"></div>
+            <img src="\favicon.png" class="icon-Header animate__animated animate__fadeInDown" width="6%">
+            <h1 class="animate__animated animate__fadeInDown">Welcome To AIOL</h1>
+            <p class="headerCard-decrease-width animate__animated animate__fadeInDown">
                 Let's create your page. First, enter your page's name.
             </p>
 
             <div class="signuparea">
-                <div class="inputholder">
+                <div class="inputholder animate__animated animate__fadeInDown">
                     <div>
                         aiol.quntem.co.uk/
                     </div>
-                    <input class="card1url1" type="text" id="pagenameinput" placeholder="YourName">
+                    <input class="card1url1 animate__animated animate__fadeInDown" type="text" id="pagenameinput" placeholder="YourName">
                 </div>
-                <button type="submit" class="card1url2" onclick="createpage($('#pagenameinput').val())">Create</button>
+                <button type="submit" class="card1url2 animate__animated animate__fadeInDown" onclick="createpage($('#pagenameinput').val())">Create</button>
             </div>
+        </div>
+
+        <div style="text-align: center;">
+            <h2 class="animate__animated animate__fadeInDown animate__delay-1s">Confused?</h2>
+            <P class="animate__animated animate__fadeInDown animate__delay-1s">
+                If you're confused, head over to our repository on GitHub for our guide! (Labeled as "README.md")
+                good luck and have fun messing around :3
+            </P>
+
+            <button class="button animate__animated animate__fadeInDown animate__delay-2s">
+                <a href="https://github.com/Quntem/AllInOneLink">
+                    Our Repository
+                </a>
+            </button>
+
+            <button class="button animate__animated animate__fadeInDown animate__delay-2s">
+                <a href="https://github.com/Quntem/AllInOneLink/blob/main/README.md">
+                    Guide for Beginners
+                </a>
+            </button>
         </div>
     </body>
 </html>

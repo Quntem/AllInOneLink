@@ -54,3 +54,18 @@
     margin: auto;
     margin-top: 2px;
 }
+
+.button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #1d1d1d;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(0deg, rgba(43,71,41,1) 0%, rgba(23,37,22,1) 100%);
+}
