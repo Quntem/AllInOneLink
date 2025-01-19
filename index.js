@@ -6,7 +6,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/src'));
 var port = 5500
 var currentfile = ""
-require('dotenv').config({path: __dirname + '\\.env'})
+require('dotenv').config({path: __dirname + '/.env'})
 const { clerkMiddleware, requireAuth, clerkClient, getAuth } = require('@clerk/express');
 app.use(clerkMiddleware());
 
