@@ -1,10 +1,10 @@
 /* Body Formatting */
   
-body {
-    height: 100vh;
+body {  
     background: #1a1a1a;
     color: white;
     font-weight: normal;
+    font-size: 1em;
     font-family: 'Figtree', sans-serif;
 }
 
@@ -44,8 +44,8 @@ header {
     }
 
     .headerCard-decrease-width {
-        padding-left: 35%;
-        padding-right: 35%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     /* Benefit Card Formatting */
