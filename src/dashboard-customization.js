@@ -15,14 +15,14 @@ var updatecolors = function() {
         redirect: "follow"
     };
 
-    fetch("http://localhost:5500/api/page/" + currentpage + "/colors/update", requestOptions)
+    fetch("/api/page/" + currentpage + "/colors/update", requestOptions)
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.error(error));
 }
 
 var pagefunction = function() {
-    fetch("api/page/" + currentpage + "/colors/get")
+    fetch("/api/page/" + currentpage + "/colors/get")
         .then(res => res.json())
         .then(res => {
             $("#bgcolourinput").val(res.bgcolor)

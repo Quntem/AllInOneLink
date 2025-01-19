@@ -1,6 +1,6 @@
 var pagefunction = function() {
     pos = 0
-    fetch("api/page/" + currentpage + "/links/list")
+    fetch("/api/page/" + currentpage + "/links/list")
         .then(res => res.json())
         .then(res => {
             $("#linkListArea").html("")
@@ -22,7 +22,7 @@ var addLink = function() {
         redirect: "follow"
     };
     
-    fetch("http://localhost:5500/api/page/links/add?pagename=" + currentpage + "&name=" + prompt("Enter Link Name") + "&url=" + prompt("Enter Link URL"), requestOptions)
+    fetch("/api/page/links/add?pagename=" + currentpage + "&name=" + prompt("Enter Link Name") + "&url=" + prompt("Enter Link URL"), requestOptions)
         .then((response) => response.text())
         .then((result) => window.location.reload())
         .catch((error) => console.error(error));
@@ -35,7 +35,7 @@ var deleteLink = function(pos) {
     };
 
     if (confirm("Do You Want To Delete This Link")) {
-        fetch("http://localhost:5500/api/page/links/delete?pagename=" + currentpage + "&pos=" + pos, requestOptions)
+        fetch("/api/page/links/delete?pagename=" + currentpage + "&pos=" + pos, requestOptions)
             .then((response) => response.text())
             .then((result) => window.location.reload())
             .catch((error) => console.error(error));

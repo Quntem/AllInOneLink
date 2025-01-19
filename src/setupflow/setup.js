@@ -9,7 +9,7 @@ var createpage = function(name) {
         redirect: "follow"
     };
       
-    fetch("http://localhost:5500/api/page/create/?pagename=" + name + "&userid=" + Clerk.user.id, requestOptions)
+    fetch("/api/page/create/?pagename=" + name + "&userid=" + Clerk.user.id, requestOptions)
         .then((response) => response.text())
         .then((result) => {
             console.log(result)
