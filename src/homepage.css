@@ -18,6 +18,15 @@ a, a:hover, a:active, a:visited {
     color: white; 
 }
 
+/* Header */
+
+header {
+    background-color: #00000050;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
 /* Cards Formatting */
 
     /* Header Card Formatting */
