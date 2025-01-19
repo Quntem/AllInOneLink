@@ -1,0 +1,23 @@
+/* Body Formatting */
+  
+body {  
+    background: #1a1a1a;
+    color: white;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: 'Figtree', sans-serif;
+}
+
+button {
+    font-family: 'Figtree', sans-serif;
+}
+
+a, a:hover, a:active, a:visited { 
+    font-family: 'Figtree', sans-serif;
+    text-decoration: none;
+    color: white; 
+}
+
+/* Responsive */
+
+/* To Be Added */
