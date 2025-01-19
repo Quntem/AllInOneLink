@@ -13,11 +13,6 @@ All In One Link is a website that allows you to create a link for displaying lin
 
 **Fourthly** (is that even a word?), you can publish your page to make it public. Then, copy your AIOL link and clean-up your link-filled bios!
 
-# Special Cards ♦️
-**YouTube SC** - Use this card for YouTube links to get a red background color to it.
-
-**X SC** - Use this card for X __(formerly Twitter)__ links to get a more black background.
-
 # AIOL Glossary 📖
 ## AIOL User Card (User Card)
 Your AIOL's User Card (the container outside that displays all the links, you know?)
@@ -48,5 +43,3 @@ If you're someone who's from a business, tell your CEO to support us by donating
 Oscar M. - Owner of this project and the person who thought of this in the first place 🗣️
 
 Sabio T. - html, css developer who is unfunny (me) 😐
-
-Cyclic (his real name is hidden :3 ) - sat around and played geometry dash, tysm!! ❤️
