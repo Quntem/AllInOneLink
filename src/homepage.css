@@ -34,6 +34,7 @@ header {
     .headerCard {
         background-color: #00000050;
         background-image: url(index-preview.png);
+        background-size: cover;
         text-align: center;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -44,6 +45,11 @@ header {
     }
 
     .headerCard-decrease-width {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .HeaderCardText {
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -124,3 +130,22 @@ header {
     .learnmorebutton:hover {
         background: linear-gradient(180deg, #f3118d50, rgba(233,0,102,1) 100%)
     }
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .BenefitCard {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 12px;
+    }
+
+    .icon-Header {
+        width: 14%;
+    }
+
+    header {
+        visibility: hidden;
+    }
+}
