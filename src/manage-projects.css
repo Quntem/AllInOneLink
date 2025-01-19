@@ -21,7 +21,8 @@ a, a:hover, a:active, a:visited {
 /* Projects Formatting */
 
 .project-1 {
-    background-color: white;
+    background-color: #00000050;
+    padding: 16px;
 }
 
 /* Responsive */
