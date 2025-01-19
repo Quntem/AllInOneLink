@@ -6,6 +6,9 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/src'));
 var port = 5500
 var currentfile = ""
+require('dotenv').config({path: __dirname + '\\.env.local'})
+const { clerkMiddleware } = require('@clerk/express');
+app.use(clerkMiddleware());
 
 app.use(express.json());
 
@@ -40,7 +43,9 @@ app.get('/api/page/:name/colors/get', (req, res) => {
     });
 })
 
-app.post('/api/page/create/', (req, res) => {
+app.post('/api/page/create/', ClerkExpressRequireAuth({
+    signInUrl: "/"
+}), (req, res) => {
     fs.writeFile("linkindex/" + req.query.pagename + ".json", JSON.stringify({
         "name": req.query.pagename,
         "userid": req.query.userid,
@@ -59,7 +64,9 @@ app.post('/api/page/create/', (req, res) => {
     })
 })
 
-app.post('/api/page/links/add/', (req, res) => {
+app.post('/api/page/links/add/', ClerkExpressRequireAuth({
+    signInUrl: "/"
+}), (req, res) => {
     fs.readFile("linkindex/" + req.query.pagename + ".json", 'utf8', (err, data) => {
         if (!err) {
             currentfile = JSON.parse(data)
@@ -68,25 +75,31 @@ app.post('/api/page/links/add/', (req, res) => {
                 "name": req.query.name,
                 "url": req.query.url
             })
-            fs.writeFile("linkindex/" + req.query.pagename + ".json", JSON.stringify(currentfile), err => {
-                if (!err) {
-                    res.status(200).send("Success")
-                }
-            })
+            if (req.auth.userid == currentfile.userid) {
+                fs.writeFile("linkindex/" + req.query.pagename + ".json", JSON.stringify(currentfile), err => {
+                    if (!err) {
+                        res.status(200).send("Success")
+                    }
+                })
+            }
         }
     });
 })
 
-app.post('/api/page/:name/colors/update', (req, res) => {
+app.post('/api/page/:name/colors/update', ClerkExpressRequireAuth({
+    signInUrl: "/"
+}), (req, res) => {
     fs.readFile("linkindex/" + req.params.name + ".json", 'utf8', (err, data) => {
         if (!err) {
             currentfile = JSON.parse(data)
             currentfile.theme = req.body
-            fs.writeFile("linkindex/" + req.params.name + ".json", JSON.stringify(currentfile), err => {
-                if (!err) {
-                    res.status(200).send("Success")
-                }
-            })
+            if (req.auth.userid == currentfile.userid) {
+                fs.writeFile("linkindex/" + req.params.name + ".json", JSON.stringify(currentfile), err => {
+                    if (!err) {
+                        res.status(200).send("Success")
+                    }
+                })
+            }
         }
     });
 })
