@@ -1,4 +1,9 @@
 var createpage = function(name) {
+    if (length.name = 0) {
+        console.log("Nothing was inputted")
+        return
+    } 
+
     requestOptions = {
         method: "POST",
         redirect: "follow"
