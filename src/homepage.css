@@ -10,103 +10,78 @@ body {
 
 /* Cards Formatting */
 
-.card1 {
-    background-color: #00000050;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 40px;
-    margin: 25px;
-    border-radius: 14px;
-}
+    /* Header Card Formatting */
+    .headerCard {
+        background-color: #00000050;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 40px;
+        margin: 25px;
+        border-radius: 14px;
+    }
 
-.BenefitCard {
-    background-color: #00000050;
-    width: 35%;
-    margin: auto;
-    padding: 8px;
-    padding-left: 32px;
-    padding-right: 32px;
-    border-radius: 16px;
-    margin-bottom: 16px;
-}
+    .headerCard-decrease-width {
+        padding-left: 35%;
+        padding-right: 35%;
+    }
 
-.latestUpdate {
-    background-color: #00000050;
-    width: 60%;
-    margin: auto;
-    padding: 8px;
-    padding-left: 32px;
-    padding-right: 32px;
-    border-radius: 16px;
-    margin-bottom: 16px;
-}
+    /* Create Your Page / Sign In Button Row */
 
-.card1-decrease-width {
-    padding-left: 35%;
-    padding-right: 35%;
-}
+    .signuparea {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.card1url1 {
-    width: 15%;
-    font-family: 'Figtree', sans-serif;
-    background-color: #00000000;
-    color: white;
-    border: none;
-    width: 100px;
-    padding-left: 0px;
-    border-radius: 6px;
-    outline: none;
-    text-align: left;
-}
+    /* Benefit Card Formatting */
 
-.card1url2 {
-    width: 4%;
-    background-color: #00000075;
-    font-family: 'Figtree', sans-serif;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    text-align: center;
-    margin: auto;
-}
+    .BenefitCard {
+        background-color: #00000050;
+        width: 35%;
+        margin: auto;
+        padding: 8px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-radius: 16px;
+        margin-bottom: 16px;
+    }
 
-#signupbutton {
-    margin: 10px;
-    padding: 10px;
-    background-color: #1a1a1a;
-    color: white;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-}
+    /* Latest Update Formatting */
 
-#signinbutton {
-    margin: 10px;
-    padding: 10px;
-    background-color: #1a1a1a;
-    color: white;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-}
+    .latestUpdate {
+        background-color: #00000050;
+        width: 60%;
+        margin: auto;
+        padding: 8px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-radius: 16px;
+        margin-bottom: 16px;
+    }
 
-.inputholder {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: fit-content;
-    background-color: #00000075;
-    margin-right: 15px;
-    border-radius: 10px;
-    margin: auto;
-}
+    /* Button Formatting */
 
-.signuparea {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
+    #signupbutton {
+        margin: 10px;
+        padding: 10px;
+        background-color: #1a1a1a;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #signinbutton {
+        margin: 10px;
+        padding: 10px;
+        background-color: #1a1a1a;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
