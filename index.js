@@ -93,6 +93,25 @@ app.post('/api/page/links/add/', requireAuth({
     });
 })
 
+app.delete('/api/page/links/delete', requireAuth({
+    signInUrl: "/"
+}), (req, res) => {
+    fs.readFile("linkindex/" + req.query.pagename + ".json", 'utf8', (err, data) => {
+        if (!err) {
+            currentfile = JSON.parse(data)
+            currentfile.links.splice(req.query.pos, 1)
+            const { userId } = getAuth(req)
+            if (userId == currentfile.userid) {
+                fs.writeFile("linkindex/" + req.query.pagename + ".json", JSON.stringify(currentfile), err => {
+                    if (!err) {
+                        res.status(200).send("Success")
+                    }
+                })
+            }
+        }
+    });
+})
+
 app.post('/api/page/:name/colors/update', requireAuth({
     signInUrl: "/"
 }), (req, res) => {
