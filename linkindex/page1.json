@@ -1,10 +1,10 @@
 {
-    "name": "page1",
+    "name": "Galaxie",
     "userid": "uhiughrognr",
     "theme": {
-        "bgcolor": "#ff0000",
-        "cardcolor": "#ffffff",
-        "textcolor": "#000000"
+        "bgcolor": "#1a1a1a",
+        "cardcolor": "#1d1d1d",
+        "textcolor": "#ffffff"
     },
     "links": [
         {
