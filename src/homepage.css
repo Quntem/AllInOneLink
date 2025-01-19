@@ -1,3 +1,7 @@
+#BenefitsH2 {
+    visibility: hidden;
+}
+
 /* Body Formatting */
   
 body {  
@@ -16,15 +20,6 @@ a, a:hover, a:active, a:visited {
     font-family: 'Figtree', sans-serif;
     text-decoration: none;
     color: white; 
-}
-
-/* Header */
-
-header {
-    background-color: #00000050;
-    color: white;
-    padding: 15px;
-    text-align: left;
 }
 
 /* Cards Formatting */
@@ -139,13 +134,5 @@ header {
         width: 60%;
         margin: auto;
         margin-bottom: 12px;
-    }
-
-    .icon-Header {
-        width: 14%;
-    }
-
-    header {
-        visibility: hidden;
     }
 }
