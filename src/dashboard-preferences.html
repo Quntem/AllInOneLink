@@ -38,30 +38,42 @@
     </head>
 
     <body>
+        <!-- Back Button Row -->
         <div class="BackButtonRow">
+            <!-- Back Button -->
             <button class="backButton">
                 <a href="dashboard.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
                 </a>
             </button>
+
+            <!-- User Button -->
             <div id="user-button"></div>
         </div>
+
+        <!-- Sidebar Layout -->
         <div class="sidebarLayout">
+            <!-- Sidebar / Navbar -->
             <div class="sidebarArea">
                 <nav class="navbar">
                     <ul>
                         <li><a href="dashboard-links.html">Links</a></li>
-                        <li><a href="">Customization</a></li>
+                        <li><a href="dashboard-customization.html">Customization</a></li>
                         <li><a href="dashboard-preferences.html" class="selected">Preferences</a></li>
                         <li><a href="">Other Settings</a></li>
                     </ul>
                 </nav>
             </div>
+
+            <!-- Main Page Area -->
             <div class="mainpageArea">
+                <!-- Project Preferences -->
                 <div class="ProjPref">
+                    <!-- Header -->
                     <h1>Preferences</h1>
                     <p>Change your preferences here for your Card!</p>
 
+                    <!-- Checkboxes -->
                     <label for="DisAnim">Disable Animations</label>
                     <input type="checkbox" name="DisAnim">
                 </div>
