@@ -37,6 +37,7 @@ a, a:hover, a:active, a:visited {
         margin-right: 35%;
         margin: 25px;
         border-radius: 14px;
+        margin: auto;
     }
 
     .headerCard-decrease-width {
@@ -130,8 +131,48 @@ a, a:hover, a:active, a:visited {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    body {
+        margin: 0px;
+    }
+
+    .headerCard {
+        max-width: none;
+        width: 100%;
+        margin: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 0px;
+    }
+
+    .icon-Header {
+        width: 10%;
+    }
+
     .BenefitCard {
-        width: 60%;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 12px;
+        border-radius: 0px;
+    }
+
+    .latestUpdate {
+        width: fit-content;
+        margin: auto;
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .headerCard {
+        margin: 0%;
+        border-radius: 0px;
+    }
+
+    .BenefitCard {
+        width: fit-content;
         margin: auto;
         margin-bottom: 12px;
     }
