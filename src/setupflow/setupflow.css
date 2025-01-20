@@ -1,17 +1,13 @@
-#user-button {
-    position: absolute !important;
-    top: 20px;
-    left: 20px;
-}
-
 .headerCard {
-    background-color: #00000050;
+    background-color: #00000000;
     text-align: center;
     background-image: none;
     padding-top: 15px;
     padding-bottom: 40px;
     margin: 25px;
     border-radius: 14px;
+    margin-top: 32px;
+    margin-bottom: 1%;
 }
 
 .inputholder {
@@ -23,6 +19,14 @@
     margin-right: 15px;
     border-radius: 10px;
     margin: auto;
+}
+
+.icon-Header {
+    margin-top: 1%;
+}
+
+.placeholder-text {
+    padding-left: 12px;
 }
 
 .signuparea {
@@ -37,28 +41,31 @@
     border: none;
     width: 100px;
     padding-left: 0px;
+    padding-right: 12px;
     border-radius: 6px;
     outline: none;
     text-align: left;
 }
 
 .card1url2 {
-    width: 4%;
-    background-color: #00000075;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    background-color: #00000000;
     font-family: 'Figtree', sans-serif;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     text-align: center;
-    margin: auto;
-    margin-top: 2px;
+    margin-top: 6px;
 }
 
 .button {
-    margin: 10px;
-    padding: 10px;
-    background-color: #1d1d1d;
+    position: relative;
+    margin: auto;
+    padding-top: 5px;
+    background-color: #1d1d1d00;
     color: white;
     outline: none;
     border: none;
@@ -68,4 +75,13 @@
 
 .button:hover {
     background: linear-gradient(0deg, rgba(43,71,41,1) 0%, rgba(23,37,22,1) 100%);
+}
+
+/* Responsive Code (OVERWRITES HOMEPAGE.CSS REACTIVE CODE) */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .icon-Header {
+        width: 16%;
+    }
 }

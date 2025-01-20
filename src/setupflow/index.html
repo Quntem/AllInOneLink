@@ -42,21 +42,24 @@
             <p class="headerCard-decrease-width animate__animated animate__fadeInDown">
                 Let's create your page. First, enter your page's name.
             </p>
+        </div>
 
-            <div class="signuparea">
-                <div class="inputholder animate__animated animate__fadeInDown">
-                    <div>
-                        aiol.quntem.co.uk/
-                    </div>
-                    <input class="card1url1 animate__animated animate__fadeInDown" type="text" id="pagenameinput" placeholder="YourName">
+        <div class="signuparea">
+            <h2 style="text-align: center;">Create <span style="background-color: #0f92df50; font-size: 1.2em;">Your</span> Page</h2>
+            <div class="inputholder animate__animated animate__fadeInDown">
+                <div class="placeholder-text">
+                    aiol.quntem.co.uk/
                 </div>
-                <button type="submit" class="card1url2 animate__animated animate__fadeInDown" onclick="createpage($('#pagenameinput').val())">Create</button>
+                <input class="card1url1 animate__animated animate__fadeInDown" type="text" id="pagenameinput" placeholder="YourName">
             </div>
+
+            <!-- Disabled // NEEDS CENTERING -->
+            <button type="submit" onclick="createpage($('#pagenameinput').val())" style="visibility: hidden;">Create</button>
         </div>
 
         <div style="text-align: center;">
             <h2 class="animate__animated animate__fadeInDown animate__delay-1s">Confused?</h2>
-            <P class="animate__animated animate__fadeInDown animate__delay-1s">
+            <P class="animate__animated animate__fadeInDown animate__delay-1s" style="padding-left: 2%; padding-right: 2%;">
                 If you're confused, head over to our repository on GitHub for our guide! (Labeled as "README.md")
                 good luck and have fun messing around :3
             </P>
