@@ -2,6 +2,10 @@ var updatecolors = function() {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
+    $("#previewbg").css("background-color", $("#bgcolourinput").val())
+    $("#previewcard").css("background-color", $("#cardcolourinput").val())
+    $("#previewcard").css("color", $("#textcolourinput").val())
+
     const raw = JSON.stringify({
         "bgcolor": $("#bgcolourinput").val(),
         "cardcolor": $("#cardcolourinput").val(),
@@ -28,5 +32,8 @@ var pagefunction = function() {
             $("#bgcolourinput").val(res.bgcolor)
             $("#cardcolourinput").val(res.cardcolor)
             $("#textcolourinput").val(res.textcolor)
+            $("#previewbg").css("background-color", $("#bgcolourinput").val())
+            $("#previewcard").css("background-color", $("#cardcolourinput").val())
+            $("#previewcard").css("color", $("#textcolourinput").val())
         })
 }

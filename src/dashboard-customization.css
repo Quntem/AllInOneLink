@@ -106,3 +106,20 @@ input {
     border-radius: 12px;
     margin-bottom: 12px;
 }
+
+#previewbg {
+    margin: 20px;
+    height: 100px;
+    width: 150px;
+    padding: 20px;
+}
+
+#previewcard {
+    height: 100px;
+    width: 150px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
